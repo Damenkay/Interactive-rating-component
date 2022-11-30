@@ -53,10 +53,6 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
 ```html
 <h3><span id="spanText">You selected <span id="selectedRate"> </span> out of 5</span></h3>
 ```
@@ -85,7 +81,7 @@ To see how you can add code snippets, see below:
 }
 ```
 ```js
-unction viewRate(button) {
+function viewRate(button) {
     var rate = button.getAttribute("rate");
     selectedRate.innerHTML = rate;
 }
