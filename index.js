@@ -11,9 +11,11 @@ function displayCard() {
     document.getElementById( "rating" ).style.display = "none";
 }
 
-function myFun(obj) {
-    selectedRate.innerHlTML = obj.innerHTML;
+function viewRate(button) {
+    var rate = button.getAttribute("rate");
+    selectedRate.innerHTML = rate;
 }
+
 
 
 

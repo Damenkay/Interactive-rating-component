@@ -12,7 +12,8 @@
 
 <div class="main-container">
     <!-- Rating state start -->
-  <div id="rating">
+  <center>
+    <div id="rating">
     <img src="/images/icon-star.svg" alt="star">
     <h2>How did we do?</h2>
     <p>Please let us know how we did with your support request. All feedback is appreciated 
@@ -20,23 +21,24 @@
     </p>
 
     <div class="flex-box">
-      <ul class="flex">
-        <li onclick="myFun(this)">1</li>
-        <li onclick="myFun(this)">2</li>
-        <li onclick="myFun(this)">3</li>
-        <li onclick="myFun(this)">4</li>
-        <li onclick="myFun(this)">5</li>
-      </ul>
+      <div class="flex">
+       <button type="button" rate ="1" onclick="viewRate(this)">1</button>
+       <button type="button" rate ="2" onclick="viewRate(this)">2</button> 
+       <button type="button" rate ="3" onclick="viewRate(this)">3</button> 
+       <button type="button" rate ="4" onclick="viewRate(this)">4</button>
+       <button type="button" rate ="5" onclick="viewRate(this)">5</button> 
+      </div>
     </div>
     <button  id="submitt" type="submit">Submit</button>
   </div>
+</center>
   <!-- Rating state end -->
 
   <div id="thankyou">
     <!-- Thank you state start -->
-    <img src="/images/illustration-thank-you.svg" alt="">
+    <center><img src="/images/illustration-thank-you.svg" alt=""></center>
     
-  <span id="spanText">You selected <span id="selectedRate"> </span> out of 5</span>
+  <h3><span id="spanText">You selected <span id="selectedRate"> </span> out of 5</span></h3>
 
   <h2>Thank you!</h2>
 
